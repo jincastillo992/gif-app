@@ -10,18 +10,10 @@ export const GifApp = () => {
     return (
         <>
             <h1>GifApp</h1>
-            <AddCategory
-                // setCategories={setCategories}
-                onNewCategory={onAddCategory}
-            />
+            <AddCategory onNewCategory={onAddCategory} />
             {categories.map((category) => (
                 <GifGrid key={category} category={category} />
-                // <div key={category}>
-                //     <h3>{category}</h3>
-                //     <li>{category}</li>
-                // </div>
             ))}
-            {/* Gif Item */}
         </>
     );
 };
